@@ -5,8 +5,6 @@ import Switch from 'react-ios-switch'
 import Advanced from './examples/Advanced'
 import MainPage from './mainpage/MainPage'
 
-import PreferenceBox from './landingPage/PreferenceBox'
-
 function App () {
   const [showAdvanced, setShowAdvanced] = useState(true)
   const [currentTime, setCurrentTime] = useState(0)
@@ -34,22 +32,11 @@ function App () {
 
   return (
     <div className='app'>
-      {showAdvanced ? <Advanced /> : <MainPage />}
+      <MainPage />
+      {/* {showAdvanced ? <Advanced /> : <MainPage />}
       <div className='row'>
         <p style={{ color: '#fff' }}>Show advanced example</p> <Switch checked={showAdvanced} onChange={setShowAdvanced} />
-      </div>
-      <div className='row'>
-        <p style={{ color: '#fff' }}>The current time is {currentTime}.{}</p>
-      </div>
-      <div className='row'>
-        <p style={{ color: '#fff' }}>The top song of 2018 is {topSong}.{}</p>
-      </div>
-      <div className='row'>
-        <ul>
-          {genres.map((genre) => <li>{genre}</li>)}
-        </ul>
-      </div>
-      <PreferenceBox />
+      </div> */}
     </div>
   )
 }

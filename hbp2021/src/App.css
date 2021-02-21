@@ -72,9 +72,16 @@ h2 {
 
 }
 
-.card h3 {
+.card h2 {
   position: absolute;
-  bottom: 0;
+  bottom: .5em;
+  margin: 10px;
+  color: #fff;
+}
+
+.card h4 {
+  position: absolute;
+  bottom: 2.5em;
   margin: 10px;
   color: #fff;
 }
